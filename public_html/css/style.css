@@ -1,8 +1,21 @@
+* {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
 header {
     height: 50px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: gray;
+    background-color: #F1F1F1;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: 50px;
 }
 
 .select_users {
@@ -11,14 +24,50 @@ header {
     top: 15px;
 }
 
+.select_users h2 a {
+    font-weight: bold;
+    font-size:0.9em;
+    color:black;
+    text-decoration: none;
+}
+
+.select_users h2 a:hover {
+    color: #A32824;
+}
+
 ul.users, ul.admin {
     position: absolute;
     right: 0;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: #F1F1F1;
+}
+
+ul.users {
+    width: 200px;
 }
 
 ul.admin {
     display: none;
+    width: 150px;
 }
+
+.users li a, .admin li a {
+    font-size:0.75em;
+    padding: 5px;
+    display:block;
+}
+
+.users li a:hover, .admin li a:hover {
+    background-color: #A32824;
+    color: white;
+}
+
+ul.users a, ul.admin a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .favs_list {
     float: left;
