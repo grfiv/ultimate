@@ -1,0 +1,12 @@
+#
+# generate custom error page
+#
+#ErrorDocument 404 /errors/404.php
+
+#
+# Keep everybody out of the .htaccess file
+#
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>

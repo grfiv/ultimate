@@ -3,10 +3,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-
-        <link rel="icon" href="favicon.ico">
-        
         <link href="css/reset.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!-- IE 8 and below do not support HTML5 -->
+        <!-- these scripts provide a workaround  -->
+        <!--[if lt IE 9]>
+            <script src="scripts/html5shiv.js"></script>
+            <script src="scripts/html5shiv-printshiv.js"></script>
+        <![endif]-->
+                             
         <title>Instant Update Database Project by WebinAction.co.uk</title>        
     </head>
     
@@ -15,40 +21,48 @@
             <h1>Instant Update Database Project</h1>
         </header>
         
-        <nav>
-            <div>
+        <nav class="navigation">
+            <div class="select_users">
                 <h2><a href="#">Logged-in user's name</a></h2>
             </div>
-            <ul>
+
+            <div class="profile logged_out"></div>
+            <div class="admin_button"></div>
+            
+           <ul class="users">
                 <li><a href="#">List of other users</a></li>
                 <li><a href="#">List of other users</a></li>
                 <li><a href="#">List of other users</a></li>                
             </ul>
-            <ul>
+            <ul class="admin">
                 <li><a href="#">Manage users</a></li>
                 <li><a href="#">Manage movies</a></li>
             </ul>
+            <div class='trash'></div>  
         </nav>
         
-        <nav>
-            <h2>Favorites</h2>
-            <ul>
+        <nav class="favs_list">
+            <h2>Favourites</h2>
+            <ul class="favs">
                 <li><a href="#">Movie Title</a></li>
                 <li><a href="#">Movie Title</a></li>
                 <li><a href="#">Movie Title</a></li>
             </ul>
         </nav>
         
-        <section>
-            Large movie image
+        <section class="movie_single">
+            <a href="#"><img class="movie_player" alt="Movie title" src="images-movies/movie.png"></a>
             <h3>Movie title</h3>
-            <div><p>Add to/delete from favorites</p></div>
-            <p>Description</p>
+            <div class="actions">
+                <div class="add_remove">
+                    <p>Add to/remove from favourites</p>
+                </div>
+            </div>
+            <p class="description">Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
         </section>
         
         <footer>
-            <p>Instant update database project by
-            <a href="mailto:learn@webinaction.co.uk">learn@webinaction.co.uk</a></p>
+            <p>Instant update database project by <a href="mailto:learn@webinaction.co.uk">learn@webinaction.co.uk</a></p>
         </footer>
         
     </body>
