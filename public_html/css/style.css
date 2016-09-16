@@ -73,17 +73,87 @@ ul.users a, ul.admin a {
     float: left;
     width: 175px;
     margin-left: 45px;
-    border: 1px solid blue;
+}
+
+.favs_list h2 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 20px 0px 10px 5px;
 }
 
 ul.favs {
     width: 170px;
 }
 
+ul.favs li a {
+    display:block;
+    font-size: 0.75em;    
+    text-decoration: none;
+    color: black;
+    padding: 7px 5px 7px 5px;
+}
+
+ul.favs li a:hover {
+    color: white;
+    background-color: #A32824;
+}
+
 .movie_list, .movie_single {
     margin-left: 225px;
     width: 610px;
-    border: 1px solid red;
+    border: 1px dotted gray;
+}
+
+.movie_list {
+    padding-top: 10px;
+}
+
+.movie_list h2, .movie_single h2 {
+    font-size: 1.3em;
+    padding: 5px 10px 10px 10px;
+}
+
+.movie_list ul {
+    padding-top: 20px;
+}
+
+.movie_list li {
+    padding-bottom: 10px;
+}
+
+.movie_list h3 a {
+    font-size: 1.1em;
+    color: #438BC5;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+    text-decoration: none;
+}
+
+.movie_list h3 a:hover {
+    text-decoration: underline;
+}
+
+.movie_list figcaption {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.movie_list .description {
+    font-size: 0.75em;
+    width: 400px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.welcome {
+    font-size: 0.8em;
+    padding: 10px 10px 20px 10px;
+    border-bottom: 1px dotted gray;
+    text-align: justify;
 }
 
 .thumbnail {
@@ -95,5 +165,21 @@ footer {
     clear: both;
     height: 60px;
     margin-top: 30px;
-    border: 1px solid green;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+}
+
+footer p {
+    line-height: 60px;
+    margin-left: 50px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+footer a {
+    font-size: inherit;
+    color: black;
+}
+footer a:hover {
+    color: #A32824;
 }
